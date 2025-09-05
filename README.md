@@ -21,10 +21,12 @@ Converts all public Spotify playlists to YT-Music playlists
 
 5. Add a Redirect URI:
 
-   - Example: `http://localhost:8888/callback`
+   - Example: `http://127.0.0.1:8888/callback`
    - This is where Spotify will send the user after login
 
-6. Save your **Client ID** and **Client Secret** in the `.env` file.
+6. Select `Web API`
+
+7. Save your **Client ID** and **Client Secret** in the `.env` file.
    There is an example `.env.example` file provided
 
-7. Now run the `main.py` file. Done!
+8. Now run the `main.py` file. Done!
