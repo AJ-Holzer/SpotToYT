@@ -6,7 +6,8 @@
 
 from api.youtube.auth import get_ytmusic_headers
 from api.youtube.create_playlists import create_playlists
-from typing import Any
+from api.spotify.types import Playlist
+from api.youtube.types import YTHeader
 
 
 from api.spotify.fetch import fetch_playlists
@@ -15,13 +16,16 @@ from api.spotify.fetch import fetch_playlists
 
 def main() -> None:
     # Login to YT-Music
-    yt_header: dict[str, Any] = get_ytmusic_headers()
+    yt_header: YTHeader = get_ytmusic_headers()
 
     # TODO: Login to Spotify
     # TODO: Fetch playlists
 
+    # Fetch Spotify playlists
+    playlists: list[Playlist] = fetch_playlists()
+
     # Create playlists
-    create_playlists(playlists=..., yt_header=yt_header)
+    create_playlists(playlists=playlists, yt_header=yt_header)
 
 
 if __name__ == "__main__":
