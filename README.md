@@ -15,4 +15,16 @@ Converts all public Spotify playlists to YT-Music playlists
    playwright install webkit
    ```
 
-3. Now run the `main.py` file. Done!
+3. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
+
+4. Click **Create App** -> give it a name (e.g. "Playlist Transfer")
+
+5. Add a Redirect URI:
+
+   - Example: `http://localhost:8888/callback`
+   - This is where Spotify will send the user after login
+
+6. Save your **Client ID** and **Client Secret** in the `.env` file.
+   There is an example `.env.example` file provided
+
+7. Now run the `main.py` file. Done!
