@@ -9,11 +9,10 @@ from ytmusicapi.type_alias import JsonDict
 from api.spotify.types import Playlist
 from api.youtube.types import YTHeader
 from api.youtube.add_tracks import add_tracks
-from typing import cast
 
 
 def create_playlists(playlists: list[Playlist], yt_header: YTHeader) -> None:
-    ytmusic: YTMusic = YTMusic(auth=cast(JsonDict, yt_header))
+    ytmusic: YTMusic = YTMusic(auth="yt_header_auth.json")
 
     # Create playlists
     for playlist in playlists:

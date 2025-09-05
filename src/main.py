@@ -18,9 +18,6 @@ def main() -> None:
     # Login to YT-Music
     yt_header: YTHeader = get_ytmusic_headers()
 
-    # TODO: Login to Spotify
-    # TODO: Fetch playlists
-
     # Fetch Spotify playlists
     playlists: list[Playlist] = fetch_playlists()
 
