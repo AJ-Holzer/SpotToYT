@@ -16,4 +16,4 @@ __pycache__/
 /build/
 /dist/
 /storage/
-/yt_headers_auth.json
+/yt_header_auth.json
