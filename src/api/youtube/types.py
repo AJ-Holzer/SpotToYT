@@ -7,5 +7,8 @@
 from typing import TypedDict
 
 
-class YTHeader(TypedDict):
-    cookie: str
+class SearchQueryResult(TypedDict):
+    videoId: str
+
+
+SearchQueryResults = list[SearchQueryResult]

@@ -8,11 +8,22 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Song:
+class Artist:
     name: str
+    id: str
+
+
+@dataclass
+class Track:
+    name: str
+    id: str
+    artist: Artist
+    duration: int
 
 
 @dataclass
 class Playlist:
     name: str
-    songs: list[Song]
+    id: str
+    description: str
+    tracks: list[Track]
